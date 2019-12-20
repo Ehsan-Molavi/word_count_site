@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>count page</title>
+</head>
+<body>
+<h1>welcome to count page</h1>
+<h2>you have {{ count }} words in your text</h2>
+<h2>the original text is:</h2>
+<p>{{ fulltext }}</p>
+<h2>the count of accoring each word in your text:</h2>
+<p>
+    {% for w,n in words_num %}
+        {{w}} : {{n}} <br>
+    {% endfor %}
+</p>
+</body>
+</html>

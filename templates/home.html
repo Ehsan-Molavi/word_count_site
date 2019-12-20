@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home page</title>
+</head>
+<body>
+<h1>welcome to word count site</h1>
+<h2>input your text here</h2>
+<form action="{% url 'count' %}">
+    <textarea name="fulltext" rows="20" cols="68"></textarea>
+    <input type="submit" value="count">
+
+</form>
+</body>
+</html>
